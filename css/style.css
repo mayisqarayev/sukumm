@@ -52,7 +52,7 @@ section {
     color: #fff;
     display: inline-block;
     padding: .5rem 3rem;
-    clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%,7% 50%, 0% 0%);  /*Fiqur vermek ucun*/
+    clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%,7% 50%, 0% 0%);
 }
 
 
@@ -182,7 +182,7 @@ section {
     border: 0px solid;
     position: absolute;
     top: 110%;
-    right: -110%;  /*Shopping card buttonu open-close ucun*/
+    right: -110%;
     padding: 1rem;
     border-radius: .5rem;
     box-shadow: var(--box-shadow);
@@ -419,11 +419,8 @@ section {
     padding-bottom: 1rem 0;
     text-transform: none;
 }
-/*!!!features*/
 
 
-
-/*products!!!*/
 .products .product-slider {
     border: 0px solid;
     padding: 1rem;
@@ -469,10 +466,7 @@ section {
     color: orange;
     padding: .5rem 0;
 }
-/*!!!products*/
 
-
-/*products categories!!!*/
 .categories .box-container {
     border: 0px solid;
     display: grid;
@@ -512,10 +506,7 @@ section {
     line-height: 1.8;
     padding: 1rem 0;
 }
-/*!!!products categories*/
 
-
-/*review!!!*/
 .review .review-slider {
     border: 0px solid;
     padding: 1rem;
@@ -561,10 +552,7 @@ section {
     color: orange;
     font-size: 1.7rem;
 }
-/*!!!review*/
 
-
-/*footer css!!!*/
 .footer {
     background: #fff;
 }
@@ -658,12 +646,6 @@ section {
     color: var(--green);
 }
 
-
-
-/*!!!footer css*/
-
-
-/*media queries*/
 @media (max-width: 991px) {
     html{
         font-size: 55%;

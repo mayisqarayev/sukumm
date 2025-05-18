@@ -1,7 +1,5 @@
 let searchForm = document.querySelector('.search-form');
 
-
-
 document.querySelector('#search-btn').onclick = () => 
 {
     searchForm.classList.toggle('active');
@@ -10,9 +8,7 @@ document.querySelector('#search-btn').onclick = () =>
     navbar.classList.remove('active');
 }
 
-
 let shoppingCart = document.querySelector('.shopping-cart');
-
 document.querySelector('#cart-btn').onclick = () => 
 {
     shoppingCart.classList.toggle('active');
@@ -21,8 +17,6 @@ document.querySelector('#cart-btn').onclick = () =>
     navbar.classList.remove('active');
 }
 
-
-
 let loginForm = document.querySelector('.login-form');
 const emailInput = loginForm.querySelector('input[type="email"]');
 const passwordInput = loginForm.querySelector('input[type="password"]');
@@ -30,25 +24,18 @@ const profileSection = document.getElementById('profile-section');
 const userEmailSpan = document.getElementById('user-email');
 const logoutBtn = document.getElementById('logout-btn');
 
-// Form submit olduğunda login yoxlaması
 loginForm.addEventListener('submit', function (e) {
-    e.preventDefault(); // Formun yenilənməsinin qarşısını alırıq
+    e.preventDefault();
 
     const enteredEmail = emailInput.value.trim();
     const enteredPassword = passwordInput.value;
 
-    // Qeydiyyat məlumatlarını localStorage-dan alırıq
     const registeredEmail = localStorage.getItem('registeredEmail');
     const registeredPassword = localStorage.getItem('registeredPassword');
 
-    // Doğrulama
     if (enteredEmail === registeredEmail && enteredPassword === registeredPassword) {
         alert('Daxilolma uğurludur!');
-
-        // Login form gizlədilir
         loginForm.style.display = 'none';
-
-        // Profil görünür olur və email göstərilir
         userEmailSpan.textContent = registeredEmail;
         profileSection.style.display = 'block';
     } else {
@@ -56,15 +43,9 @@ loginForm.addEventListener('submit', function (e) {
     }
 });
 
-// Logout funksiyası
 logoutBtn.addEventListener('click', function () {
-    // Profil bölməsi gizlədilir
     profileSection.style.display = 'none';
-
-    // Login form yenidən görünür
     loginForm.style.display = 'block';
-
-    // Email və şifrə sahələri təmizlənir
     emailInput.value = '';
     passwordInput.value = '';
 });
@@ -77,10 +58,7 @@ document.querySelector('#login-btn').onclick = () =>
     navbar.classList.remove('active');
 }
 
-
-
 let navbar = document.querySelector('.navbar');
-
 document.querySelector('#menu-btn').onclick = () => 
 {
     navbar.classList.toggle('active');
@@ -89,8 +67,6 @@ document.querySelector('#menu-btn').onclick = () =>
     searchForm.classList.remove('active');
 }
 
-
-
 window.onscroll = () => 
 {
     searchForm.classList.remove('active');
@@ -98,8 +74,6 @@ window.onscroll = () =>
     loginForm.classList.remove('active');
     navbar.classList.remove('active');
 }
-
-
 
 var swiper = new Swiper(".product-slider", {
     loop:true,
