@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SMARKET | Əlaqə</title>
+  <link rel="icon" type="image/icon" href="image/logo1.png">
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <style>
+    :root {
+      --main-color: violet;
+      --text-dark: #222;
+      --bg-light: #fafafa;
+      --input-border: #ddd;
+      --shadow: rgba(0, 0, 0, 0.1);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-light);
+      color: var(--text-dark);
+      line-height: 1.5;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+    }
+
+    .container {
+      background: white;
+      max-width: 700px;
+      width: 100%;
+      padding: 30px 40px;
+      border-radius: 15px;
+      box-shadow: 0 8px 25px var(--shadow);
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+      color: var(--main-color);
+    }
+
+    header i {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    header h1 {
+      font-size: 32px;
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+
+    form {
+      display: grid;
+      gap: 18px;
+    }
+
+    label {
+      font-weight: 600;
+      margin-bottom: 6px;
+      display: block;
+      font-size: 16px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 12px 15px;
+      border: 1.8px solid var(--input-border);
+      border-radius: 8px;
+      font-size: 16px;
+      transition: border-color 0.3s ease;
+      font-family: inherit;
+      resize: vertical;
+      min-height: 45px;
+    }
+
+    input:focus, textarea:focus {
+      border-color: var(--main-color);
+      outline: none;
+      box-shadow: 0 0 8px rgba(138, 43, 226, 0.3);
+    }
+
+    textarea {
+      min-height: 100px;
+    }
+
+    button {
+      background-color: var(--main-color);
+      color: white;
+      padding: 14px 0;
+      font-size: 18px;
+      font-weight: 700;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.25s ease;
+    }
+
+    button:hover {
+      background-color: #7a1fcc;
+    }
+
+
+    .contact-info {
+      margin-top: 35px;
+      border-top: 1px solid #eee;
+      padding-top: 25px;
+      color: #555;
+      font-size: 15px;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 18px;
+      gap: 15px;
+      padding: 10px 14px;
+      border-radius: 10px;
+      transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+
+    .contact-item:hover {
+      background-color: #f3f0ff;
+      transform: translateY(-3px);
+      box-shadow: 0 5px 15px rgba(138, 43, 226, 0.15);
+    }
+
+    .contact-item i {
+      font-size: 22px;
+      color: var(--main-color);
+      min-width: 28px;
+      text-align: center;
+    }
+
+    .contact-item span {
+      word-break: break-word;
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        padding: 25px 20px;
+      }
+
+      header h1 {
+        font-size: 26px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <i class="fa fa-shopping-basket"></i>
+      <h1>SMARKET | Əlaqə</h1>
+    </header>
+
+    <form id="contactForm" novalidate>
+      <div>
+        <label for="name">Adınız</label>
+        <input type="text" id="name" name="name" required placeholder="Adınızı daxil edin" />
+      </div>
+
+      <div>
+        <label for="email">E-poçt</label>
+        <input type="email" id="email" name="email" required placeholder="E-poçt ünvanınızı daxil edin" />
+      </div>
+
+      <div>
+        <label for="subject">Mövzu</label>
+        <input type="text" id="subject" name="subject" placeholder="Müraciət mövzusunu qeyd edin" />
+      </div>
+
+      <div>
+        <label for="message">Mesajınız</label>
+        <textarea id="message" name="message" required placeholder="Mesajınızı yazın..."></textarea>
+      </div>
+
+      <button type="submit">Göndər</button>
+    </form>
+
+    <section class="contact-info">
+      <div class="contact-item">
+        <i class="fa fa-map-marker-alt"></i>
+        <span>Ünvan: Bakı, Azərbaycan</span>
+      </div>
+      <div class="contact-item">
+        <i class="fa fa-phone"></i>
+        <span>Telefon: +994 50 123 45 67</span>
+      </div>
+      <div class="contact-item">
+        <i class="fa fa-envelope"></i>
+        <span>Email: info@smarket.az</span>
+      </div>
+      <div class="contact-item">
+        <i class="fa fa-clock"></i>
+        <span>İş saatları: B.e.-C.a. 09:00 - 18:00</span>
+      </div>
+    </section>
+  </div>
+
+  <script>
+    const form = document.getElementById('contactForm');
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      if (!form.checkValidity()) {
+        alert('Zəhmət olmasa bütün tələb olunan sahələri doldurun.');
+        return;
+      }
+
+      // Burada AJAX ilə göndərmə və ya digər proseslər həyata keçirilə bilər.
+      alert('Mesajınız göndərildi. Təşəkkür edirik!');
+
+      form.reset();
+    });
+  </script>
+
+</body>
+</html>

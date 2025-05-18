@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>SMarket | Home</title>
+	<link rel="icon" type="image/icon" href="image/logo1.png">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<header class="header">
+		<a href="#" class="logo"> <i class="fa fa-shopping-basket"></i> SMarket</a>
+		<nav class="navbar">
+			<a href="#home">Ana Səhifə</a>
+			<a href="#features">Xidmətlər</a>
+			<a href="#products">Məhsullar</a>
+			<a href="#categories">Kateqoriyalar</a>
+			<a href="#review">Haqqımızda</a>
+		</nav>
+
+		<div class="icons">
+			<div class="fa fa-bars" id="menu-btn"></div>
+			<div class="fa fa-search" id="search-btn"></div>
+			<div class="fa fa-shopping-cart" id="cart-btn"></div>
+			<div class="fa fa-user" id="login-btn"></div>
+		</div>
+
+		<div class="profile" id="profile-section" style="display: none;">
+			<img src="image/user.png" alt="Profil" class="profile-img">
+			<span id="user-email">istifadeci@mail.com</span>
+			<button id="logout-btn" class="btn">Çıxış</button>
+		</div>
+
+		<form class="search-form">
+			<input type="search" id="search-box" placeholder="Axtarış...">
+			<label for="search-box" class="fa fa-search"></label>
+		</form>
+
+		<div class="shopping-cart">
+			<div class="box">
+				<i class="fa fa-trash"></i>
+				<img src="image/cart-img-1.png">
+				<div class="content">
+					<h3>Qarpız</h3>
+					<span class="price">₼4.90/-</span>
+					<span class="quantity">Say : 1</span>
+				</div>
+			</div>
+
+			<div class="box">
+				<i class="fa fa-trash"></i>
+				<img src="image/cart-img-2.png">
+				<div class="content">
+					<h3>Soğan</h3>
+					<span class="price">₼2.50/-</span>
+					<span class="quantity">Say : 5</span>
+				</div>
+			</div>
+
+			<div class="box">
+				<i class="fa fa-trash"></i>
+				<img src="image/cart-img-3.png">
+				<div class="content">
+					<h3>Toyuq</h3>
+					<span class="price">₼7.40/-</span>
+					<span class="quantity">Say : 3</span>
+				</div>
+			</div>
+			
+			<div class="total">Ümumi : ₼14.80/- </div>
+			<a href="#" class="btn">Yoxlamaq</a>
+		</div>
+
+		<form action="#" class="login-form">
+			<h3>Daxil ol</h3>
+			<input type="email" placeholder="Email" class="box">
+			<input type="password" placeholder="Şifrə" class="box">
+			<p>Şifrəmi unutdum <a href="#"> Bura klikləyin </a></p>
+			<p>Hesabım yoxdur <a href="register.html">Hesab yarat </a></p>
+			<input type="submit" value="daxil ol" class="btn">
+		</form>
+	</header>
+
+	<!-- Ana sehife section-->
+	<section class="home" id="home">
+		<div class="content">
+			<h3>Sizin üçün Təzə və <span>Orqanik</span> məhsullar </h3>
+			<p>Bu vebsayt hipermaket alış-verişi üçün hazırlanmışdır.
+				İstənilən məhsulu burdan əldə etmək mümkündür</p>
+			<a href="#" class="btn">Alış-veriş et</a>
+		</div>
+	</section>
+
+	<!-- Xidmətlər section-->
+	<section class="features" id="features">
+		<h1 class="heading"> <span>Xidmətlər</span> </h1>
+
+		<div class="box-container">
+			<div class="box">
+				<img src="image/feature-img-1.png" >
+				<h3>Təzə və Orqanik</h3>
+
+				<p>Sizin üçün hər zaman təzə və orqanik məhsullar təqdim edirik</p>
+
+				<a href="#" class="btn">Daha çox</a>
+			</div>
+
+			<div class="box">
+				<img src="image/feature-img-2.png" >
+				<h3>Pulsuz çatdırılma</h3>
+
+				<p>Hər bir məhsulumuzu evinizə kimi pulsuz çatdırırıq</p>
+
+				<a href="#" class="btn">Daha çox</a>
+			</div>
+
+			<div class="box">
+				<img src="image/feature-img-3.png" >
+				<h3>Ödəniş</h3>
+
+				<p>Hər cür ödəniş vasitəsilə ödəniş etmək imkanı</p>
+
+				<a href="#" class="btn">Daha çox</a>
+			</div>
+		</div>
+	</section>
+
+<!-- Mehsullar section-->
+<section class="products" id="products">
+	<h1 class="heading"> <span>Məhsullar</span></h1>
+	<div class=" swiper product-slider">
+
+		<div class="swiper-wrapper">
+				
+			<div class="swiper-slide box">
+				<img src="image/bicycle.jpg">
+				<h1>Velosiped</h1>
+				<div class="price">₼100/- - 500/-</div>
+				<div class="stars">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star-half"></i>
+				</div>
+				<a href="" class="btn">Səbətə əlavə et</a>
+			</div>
+
+			<div class="swiper-slide box">
+				<img src="image/computer.png">
+				<h1>Kompüter</h1>
+				<div class="price">₼1099/- - 3599/-</div>
+				<div class="stars">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star-half"></i>
+				</div>
+				<a href="" class="btn">Səbətə əlavə et</a>
+			</div>
+			
+			
+			<div class="swiper-slide box">
+				<img src="image/fridge.png">
+				<h1>Soyuducu</h1>
+				<div class="price">₼1350/- - 2930/-</div>
+				<div class="stars">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star-half"></i>
+				</div>
+				<a href="" class="btn">Səbətə əlavə et</a>
+			</div>
+			
+			
+			<div class="swiper-slide box">
+				<img src="image/phone.png">
+				<h1>Telefon</h1>
+				<div class="price">₼430/- - 2500/-</div>
+				<div class="stars">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+				</div>
+				<a href="" class="btn">Səbətə əlavə et</a>
+			</div>
+			
+			
+			<div class="swiper-slide box">
+				<img src="image/photocamera.png">
+				<h1>Fotokamera</h1>
+				<div class="price">₼1499/- - 4999/-</div>
+				<div class="stars">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star-half"></i>
+				</div>
+				<a href="" class="btn">Səbətə əlavə et</a>
+			</div>
+			
+			
+			<div class="swiper-slide box">
+				<img src="image/television.png">
+				<h1>Televizor</h1>
+				<div class="price">₼1799/- - 7699/-</div>
+				<div class="stars">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+				</div>
+				<a href="" class="btn">Səbətə əlavə et</a>
+			</div>
+			
+			
+			<div class="swiper-slide box">
+				<img src="image/bag.png">
+				<h1>Çanta</h1>
+				<div class="price">₼39.40/- - 79.99/-</div>
+				<div class="stars">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+				</div>
+				<a href="" class="btn">Səbətə əlavə et</a>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="swiper product-slider">
+
+		<div class="swiper-wrapper">
+
+
+				<div class="swiper-slide box">
+					<img src="image/product-1.png">
+					<h1>Portağal</h1>
+					<div class="price">₼3.40/- - 6.60/-</div>
+					<div class="stars">
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+					</div>
+					<a href="" class="btn">Səbətə əlavə et</a>
+				</div>
+				
+				<div class="swiper-slide box">
+					<img src="image/product-2.png">
+					<h1>Soğan</h1>
+					<div class="price">₼0.99/- - 1.90/-</div>
+					<div class="stars">
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star-half"></i>
+					</div>
+					<a href="" class="btn">Səbətə əlavə et</a>
+				</div>
+
+
+				<div class="swiper-slide box">
+					<img src="image/product-3.png">
+					<h1>Ət</h1>
+					<div class="price">₼14.50/- - 20.00/-</div>
+					<div class="stars">
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star-half"></i>
+					</div>
+					<a href="" class="btn">Səbətə əlavə et</a>
+				</div>
+
+
+				<div class="swiper-slide box">
+					<img src="image/product-4.png">
+					<h1>Kələm</h1>
+					<div class="price">₼1.80/- - 3.10/-</div>
+					<div class="stars">
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+					</div>
+					<a href="" class="btn">Səbətə əlavə et</a>
+				</div>
+
+			
+				<div class="swiper-slide box">
+					<img src="image/product-5.png">
+					<h1>Kartof</h1>
+					<div class="price">₼0.90/- - 1.80/-</div>
+					<div class="stars">
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star-half"></i>
+					</div>
+					<a href="" class="btn">Səbətə əlavə et</a>
+				</div>
+
+
+				<div class="swiper-slide box">
+					<img src="image/product-6.png">
+					<h1>Avokado</h1>
+					<div class="price">₼4.00/- - 5.50/-</div>
+					<div class="stars">
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star-half"></i>
+					</div>
+					<a href="" class="btn">Səbətə əlavə et</a>
+				</div>
+
+
+				<div class="swiper-slide box">
+					<img src="image/product-7.png">
+					<h1>Kök</h1>
+					<div class="price">₼1.30/- - 2.00/-</div>
+					<div class="stars">
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star-half"></i>
+					</div>
+					<a href="" class="btn">Səbətə əlavə et</a>
+				</div>
+
+
+				<div class="swiper-slide box">
+					<img src="image/product-8.png">
+					<h1>Lime</h1>
+					<div class="price">₼0.50/- - 0.90/-</div>
+					<div class="stars">
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star-half"></i>
+					</div>
+					<a href="" class="btn">Səbətə əlavə et</a>
+				</div>
+		</div>
+	</div>
+</section>
+<!-- Mehsullar section-->
+
+
+<!-- Kateqoriyalar section-->
+<section class="categories" id="categories">
+	<h1 class="heading"> Məhsul <span>Kateqoriyaları</span></h1>
+	<div class="box-container">
+		<div class="box">
+			<img src="image/cat-1.png">
+			<h3>Tərəvəzlər</h3>
+			<p>20% endirim</p>
+			<a href="#" class="btn">Alış-veriş et</a>
+		</div>
+
+		<div class="box">
+			<img src="image/cat-2.png">
+			<h3>Meyvələr</h3>
+			<p>15% endirim</p>
+			<a href="#" class="btn">Alış-veriş et</a>
+		</div>
+
+		<div class="box">
+			<img src="image/technology.png">
+			<h3>Texnologiya</h3>
+			<p>30% endirim</p>
+			<a href="#" class="btn">Alış-veriş et</a>
+		</div>
+
+		<div class="box">
+			<img src="image/cat-4.png">
+			<h3>Ət məhsulları</h3>
+			<p>25% endirim</p>
+			<a href="#" class="btn">Alış-veriş et</a>
+		</div>
+	</div>
+</section>
+<!-- Kateqoriyalar section-->
+
+<!-- Haqqimizda section-->
+<section class="review" id="review" >
+	<h1 class="heading"><span>Haqqımızda</span></h1>
+
+	<div class="swiper review-slider">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide box">
+				<img src="image/pic-1.png">
+				<p>İnzibatçı.Market strukturuna nəzarəti həyata keçirir</p>
+				<h3>Anar Babayev</h3>
+				<div class="stars">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star-half"></i>
+				</div>
+			</div>
+
+			<div class="swiper-slide box">
+				<img src="image/pic-2.png">
+				<p>Biznesə nəzarət.Məhsulların alış-satış dəyərlərini idarə edir</p>
+				<h3>Aysel Həsənova</h3>
+				<div class="stars">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star-half"></i>
+				</div>
+			</div>
+
+			<div class="swiper-slide box">
+				<img src="image/pic-3.png">
+				<p>Operator.Marketdə çağrı operatorları üzrə cavabdeh şəxs</p>
+				<h3>Murad Ağayev</h3>
+				<div class="stars">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star-half"></i>
+				</div>
+			</div>
+
+			<div class="swiper-slide box">
+				<img src="image/pic-4.png">
+				<p>Kassir.Məhsul satışını həyata keçirir və məhsullar barədə məlumat verir</p>
+				<h3>Nərmin Əliyeva</h3>
+				<div class="stars">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star-half"></i>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- Haqqimizda section-->
+
+
+<!-- footer section-->
+<section class="footer">
+	<div class="box-container">
+		<div class="box">
+			<h3>Groco <i class="fa fa-shopping-basket"></i></h3>
+			<p>Sosial media hesablarımızı aşağıdakı linkərdən izləyə bilərsiniz </p>
+			<div class="share">
+				<a href="#" class="fa fa-facebook"></a>
+				<a href="#" class="fa fa-twitter"></a>
+				<a href="#" class="fa fa-instagram"></a>
+				<a href="#" class="fa fa-linkedin"></a>
+			</div>
+		</div>
+
+		<div class="box">
+			<h3>Əlaqə</h3>
+			<a href="#" class="links"> <i class="fa fa-phone"></i> +994 55 123 45 67</a>
+			<a href="#" class="links"> <i class="fa fa-phone"></i> +994 50 123 45 67</a>
+			<a href="#" class="links"> <i class="fa fa-envelope"></i>example@gmail.com</a>
+			<a href="#" class="links"> <i class="fa fa-map-marker"></i>Baku,Azerbaijan</a>
+		</div>
+
+		<div class="box">
+			<h3>Keçid</h3>
+			<a href="#" class="links"> <i class="fa fa-arrow-right"></i> Ana Səhifə</a>
+			<a href="#" class="links"> <i class="fa fa-arrow-right"></i> Xidmətlər</a>
+			<a href="#" class="links"> <i class="fa fa-arrow-right"></i> Məhsullar</a>
+			<a href="#" class="links"> <i class="fa fa-arrow-right"></i> Kateqoriyalar</a>
+			<a href="#" class="links"> <i class="fa fa-arrow-right"></i> Haqqımızda</a>
+		</div>
+
+		<div class="box">
+			<h3>Yeniliklər</h3>
+			<p>Yeniliklər üçün abunə ol</p>
+			<input type="email" placeholder="Email" class="email">
+			<input type="submit" value="Abunə ol" class="btn">
+			<img src="image/payment.png" class="payment-img">
+		</div>
+		
+	</div>
+
+	<div class="credit">Developed by <span>Valieffa Sukrana</span></div>
+</section>
+<!-- footer section-->
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script src="js/script.js"></script>
+</body>
+</html>
